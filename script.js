@@ -6,7 +6,8 @@ const diceTwo = document.getElementById("dice_two")
 const scoreOne = document.getElementById("score_one")
 const scoreTwo = document.getElementById("score_two")
 const turn = document.getElementById("turn")
-turn.textContent = "Roll Dice To Start"
+const heading = "Roll Me To Start 🎲"
+turn.textContent = heading
 let playerOneScore = 0
 let playerTwoScore = 0
 let playerOne = true
@@ -23,7 +24,7 @@ const resetGame = ()=>
 {
     rollDiceBtn.style.display = "block"
     resetGameBtn.style.display = "none"
-    turn.textContent = "Roll Dice To Start"
+    turn.textContent = heading
     playerOneScore = 0
     playerTwoScore = 0
     diceOne.textContent = 0
@@ -59,14 +60,18 @@ function(){
     }
     else if(playerOneScore >= 25)
     {
-        turn.textContent = "Game Over!! Player A WON"
+        turn.textContent = "Game Over!! Player A WON 🎉"
+        diceOne.textContent = "😄"
+        diceTwo.textContent = "😮"
         showDice()
     }
     else if(playerTwoScore >=25)
     {
-        turn.textContent = "Game Over!! Player B WON"
+        turn.textContent = "Game Over!! Player B WON 🎉"
+        diceOne.textContent = "😮"
+        diceTwo.textContent = "😄"
         showDice()
-    }
+    }   
 
     else if (playerTwoScore <25)
     {

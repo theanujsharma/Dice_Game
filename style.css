@@ -17,7 +17,6 @@ body,html
     margin:0 auto;
     margin-top:30px;
     border-radius: 20%;
-
 }
 .dice_container
 {
@@ -50,8 +49,8 @@ h1
 }
 .rolldice
 {
-    flex-basis: 100%;
     text-align: center;
+    margin:0 auto;
 }
 .btn
 {
@@ -59,6 +58,10 @@ h1
     margin:0 auto;
     background-color:tomato;
     font-size: 30px;
+    cursor: pointer;
+    position: relative;
+    top:15px;
+    left:15px;
 }
 #readme
 {
