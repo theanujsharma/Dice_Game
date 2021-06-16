@@ -1,0 +1,65 @@
+body,html
+{
+    margin:0;
+    padding:0;
+    width:100%;
+    background-color: cadetblue;
+}
+.playground
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width:400px;
+    width:70%;
+    height:400px;
+    background-color:#CACCCC;
+    padding:50px;
+    margin:0 auto;
+    margin-top:30px;
+    border-radius: 20%;
+
+}
+.dice_container
+{
+    display: flex;
+    flex-wrap:wrap;
+    width:100%;
+    justify-content: space-between;
+}
+#dice_one, #dice_two
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    background-color: yellow;
+    width:100px;
+    height: 100px;
+    border-radius:20%;
+    font-weight: 800;
+    font-size:45px;
+}
+.shadow
+{
+    box-shadow: 5px 5px 5px 5px violet;
+}
+h1
+{
+    flex-basis: 100%;
+    text-align: center;
+}
+.rolldice
+{
+    flex-basis: 100%;
+    text-align: center;
+}
+.btn
+{
+    padding:20px 45px;
+    margin:0 auto;
+    background-color:tomato;
+    font-size: 30px;
+}
+
+
+
