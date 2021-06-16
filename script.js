@@ -1,3 +1,4 @@
+const readMe = document.getElementById("readme")
 const rollDiceBtn = document.getElementById("roll")
 const resetGameBtn = document.getElementById("reset")
 const diceOne = document.getElementById("dice_one")
@@ -9,6 +10,14 @@ turn.textContent = "Roll Dice To Start"
 let playerOneScore = 0
 let playerTwoScore = 0
 let playerOne = true
+readMe.addEventListener("click",
+function()
+{
+    alert(`I am a roll dice game.
+            Two people can play it to have fun. 
+            I will let you win if you score more than 25.
+            It is all about luck. Good Luck!!`)
+})
 resetGameBtn.style.display = "none"
 const resetGame = ()=>
 {
@@ -69,5 +78,4 @@ function(){
         turn.textContent = "Player A Will Roll"
         playerOne = true
     }
-
 })
